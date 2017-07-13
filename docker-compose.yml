@@ -1,9 +1,17 @@
 version: '2'
 services:
   dockerapp:
+    extends:
+      file: common.yml
+      service: dockerapp
     build: .
+<<<<<<< HEAD
     ports:
       - "5000:5000"
+=======
+>>>>>>> d70fb6cf07a7bd6ec1490a695d0f3b015f38413a
 
   redis:
-    image: redis:3.2.0
+    extends:
+      file: common.yml
+      service: redis
