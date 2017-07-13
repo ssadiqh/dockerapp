@@ -11,8 +11,8 @@ dependencies:
 
 test:
   override:
-    - sudo docker-compose up -d
-    - sudo docker-compose run dockerapp python test.py
+    - docker-compose up -d
+    - docker-compose run dockerapp python test.py
 
 deployment:
   hub:
