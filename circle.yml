@@ -18,9 +18,9 @@ deployment:
   hub:
     branch: /.*/
     commands:
-      - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-      - docker tag dockerapp_dockerapp $DOCKER_HUB_USER_ID/dockerapp:$CIRCLE_SHA1
-      - docker tag dockerapp_dockerapp $DOCKER_HUB_USER_ID/dockerapp:latest
-      - docker push $DOCKER_HUB_USER_ID/dockerapp:$CIRCLE_SHA1
-      - docker push $DOCKER_HUB_USER_ID/dockerapp:latest
+      - docker login -e ssadiqh@gmail.com -u ssadiqh -p ZAQ!xsw2
+      - docker tag dockerapp_dockerapp ssadiqh/dockerapp:$CIRCLE_SHA1
+      - docker tag dockerapp_dockerapp ssadiqh/dockerapp:latest
+      - docker push ssadiqh/dockerapp:$CIRCLE_SHA1
+      - docker push ssadiqh/dockerapp:latest
 
